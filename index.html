@@ -6,45 +6,24 @@
 <meta name="theme-color" content="#086642">
 <title>สอนใช้ยาพ่น Accuhaler | โรงพยาบาลเนินขาม</title>
 <style>
-:root{--green:#086642;--gold:#dbb337;--ink:#17362c;--muted:#61756b;--bg:#f2f8f5;--line:#d9e7df}
-*{box-sizing:border-box}
-body{margin:0;font-family:system-ui,-apple-system,"Noto Sans Thai",Tahoma,sans-serif;color:var(--ink);background:var(--bg)}
+:root{--green:#086642;--gold:#dbb337;--ink:#17362c;--muted:#61756b;--bg:#f2f8f5;--line:#d9e7df;--purple:#8d52db;--purple2:#6e35c5;--skin:#e7bf9f;--hair:#243b35;--shirt:#8bb2c6}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Noto Sans Thai",Tahoma,sans-serif;color:var(--ink);background:var(--bg)}
 .app{max-width:530px;min-height:100dvh;margin:auto;background:#fff;display:flex;flex-direction:column;box-shadow:0 0 30px #0a5d3312}
-.top{display:flex;align-items:center;gap:10px;padding:9px 16px 8px;border-bottom:1px solid var(--line);min-height:72px}
-.logo{width:53px;height:53px;object-fit:contain;flex:none}
-.hospital{font-size:17px;font-weight:800;color:var(--green);line-height:1.22}
-.sub{font-size:12px;color:var(--muted);font-weight:600;margin-top:4px}
-.progress{padding:11px 18px 4px}
-.progline{display:flex;justify-content:space-between;align-items:center;font-weight:750;font-size:14px}
-.track{height:7px;border-radius:20px;background:#e4ede7;overflow:hidden;margin-top:8px}
-.fill{height:100%;width:0;background:var(--green);border-radius:20px;transition:width .2s}
-.content{flex:1;display:flex;flex-direction:column;padding:9px 16px 6px;min-height:0}
-.art{position:relative;flex:1;min-height:165px;max-height:360px;background:#f5faf7;border:1px solid #e5eee9;border-radius:22px;display:flex;align-items:center;justify-content:center;overflow:hidden}
-.art svg{width:100%;height:100%;max-height:340px;min-height:160px}
-.art:after{content:"ภาพสาธิต";position:absolute;top:12px;left:14px;color:#648477;font-size:11px}
-.caption{min-height:120px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:10px 5px 3px}
-.stephead{font-size:clamp(22px,6.2vw,30px);font-weight:850;line-height:1.3;margin:0}
-.instruction{margin:8px 0 0;line-height:1.5;font-size:clamp(17px,4.7vw,21px);font-weight:550}
-.tip{min-height:30px;text-align:center;color:#687a70;font-size:12px;padding:2px 14px}
-.bottom{padding:10px 16px max(14px,env(safe-area-inset-bottom));border-top:1px solid var(--line);background:#fff}
-.nav{display:grid;grid-template-columns:1fr 1.6fr;gap:10px}
-.btn{min-height:54px;border-radius:15px;font-size:19px;font-weight:800;cursor:pointer;border:0;font-family:inherit;touch-action:manipulation}
-.secondary{background:#eaf3ee;color:var(--green)}
-.primary{background:var(--green);color:white}
-.btn:disabled{opacity:.38;cursor:default}
-.utility{display:flex;justify-content:center;gap:12px;padding-top:10px}
-.utility button{background:none;border:0;color:#557569;font-size:13px;font-family:inherit;padding:5px 10px;cursor:pointer}
-.announce{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
-.motion{transform-origin:50% 50%;animation:bob 2.7s ease-in-out infinite}.slide{animation:slide 2.8s ease-in-out infinite}.breath{animation:breath 2.6s ease-in-out infinite;transform-origin:center}.click{animation:click 2.8s infinite}
-@keyframes bob{50%{transform:translateY(-6px)}}@keyframes slide{0%,15%{transform:translateX(0)}40%,80%{transform:translateX(28px)}100%{transform:translateX(0)}}@keyframes breath{0%,100%{opacity:.25;transform:translateX(0)}50%{opacity:1;transform:translateX(12px)}}@keyframes click{0%,32%,90%{opacity:.2}38%,72%{opacity:1}}
-@media(max-height:690px){.top{min-height:59px;padding:5px 12px}.logo{height:43px;width:43px}.hospital{font-size:15px}.progress{padding:7px 16px 3px}.content{padding:5px 12px 4px}.art{min-height:145px}.caption{min-height:95px;padding:5px}.stephead{font-size:22px}.instruction{font-size:17px;margin-top:5px}.tip{min-height:20px;font-size:11px}.bottom{padding:7px 12px max(8px,env(safe-area-inset-bottom))}.btn{min-height:46px;font-size:17px}.utility{padding-top:4px}}
-@media(prefers-reduced-motion:reduce){.motion,.slide,.breath,.click{animation:none!important}}
+.top{display:flex;align-items:center;gap:10px;padding:9px 16px 8px;border-bottom:1px solid var(--line);min-height:72px}.logo{width:53px;height:53px;object-fit:contain;flex:none}.hospital{font-size:17px;font-weight:800;color:var(--green);line-height:1.22}.sub{font-size:12px;color:var(--muted);font-weight:600;margin-top:4px}
+.progress{padding:11px 18px 4px}.progline{display:flex;justify-content:space-between;align-items:center;font-weight:750;font-size:14px}.track{height:7px;border-radius:20px;background:#e4ede7;overflow:hidden;margin-top:8px}.fill{height:100%;width:0;background:var(--green);border-radius:20px;transition:width .25s}
+.content{flex:1;display:flex;flex-direction:column;padding:9px 16px 6px;min-height:0}.art{position:relative;flex:1;min-height:165px;max-height:360px;background:#f5faf7;border:1px solid #e5eee9;border-radius:22px;display:flex;align-items:center;justify-content:center;overflow:hidden}.art svg{width:100%;height:100%;max-height:340px;min-height:160px}.art:after{content:"ภาพสาธิต";position:absolute;top:12px;left:14px;color:#648477;font-size:11px}
+.caption{min-height:120px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:10px 5px 3px}.stephead{font-size:clamp(22px,6.2vw,30px);font-weight:850;line-height:1.3;margin:0}.instruction{margin:8px 0 0;line-height:1.5;font-size:clamp(17px,4.7vw,21px);font-weight:550}.tip{min-height:34px;text-align:center;color:#687a70;font-size:12px;padding:2px 14px}.bottom{padding:10px 16px max(14px,env(safe-area-inset-bottom));border-top:1px solid var(--line);background:#fff}.nav{display:grid;grid-template-columns:1fr 1.6fr;gap:10px}.btn{min-height:54px;border-radius:15px;font-size:19px;font-weight:800;cursor:pointer;border:0;font-family:inherit;touch-action:manipulation}.secondary{background:#eaf3ee;color:var(--green)}.primary{background:var(--green);color:white}.btn:disabled{opacity:.38;cursor:default}.utility{display:flex;justify-content:center;gap:12px;padding-top:10px}.utility button{background:none;border:0;color:#557569;font-size:13px;font-family:inherit;padding:5px 10px;cursor:pointer}.announce{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+.note{margin:0 16px 10px;background:#f7fbf8;border:1px solid #e0ece5;border-radius:14px;padding:10px 12px;font-size:12px;line-height:1.5;color:#446255}
+.motion{transform-origin:50% 50%;animation:bob 2.7s ease-in-out infinite}.slide{animation:slide 2.6s ease-in-out infinite}.breath{animation:breath 2.6s ease-in-out infinite;transform-origin:center}.click{animation:click 2.6s infinite}.pulse{animation:pulse 2.1s ease-in-out infinite}.blink{animation:blink 2.8s steps(1) infinite}
+@keyframes bob{50%{transform:translateY(-5px)}}@keyframes slide{0%,15%{transform:translateX(0)}40%,80%{transform:translateX(22px)}100%{transform:translateX(0)}}@keyframes breath{0%,100%{opacity:.25;transform:translateX(0)}50%{opacity:1;transform:translateX(10px)}}@keyframes click{0%,30%,100%{opacity:.2}40%,75%{opacity:1}}@keyframes pulse{50%{transform:scale(1.04)}}@keyframes blink{0%,45%,100%{opacity:1}46%,49%{opacity:0.1}}
+@media(max-height:690px){.top{min-height:59px;padding:5px 12px}.logo{height:43px;width:43px}.hospital{font-size:15px}.progress{padding:7px 16px 3px}.content{padding:5px 12px 4px}.art{min-height:145px}.caption{min-height:95px;padding:5px}.stephead{font-size:22px}.instruction{font-size:17px;margin-top:5px}.tip{min-height:24px;font-size:11px}.bottom{padding:7px 12px max(8px,env(safe-area-inset-bottom))}.btn{min-height:46px;font-size:17px}.utility{padding-top:4px}.note{margin:0 12px 8px;font-size:11px}}
+@media(prefers-reduced-motion:reduce){.motion,.slide,.breath,.click,.pulse,.blink{animation:none!important}}
 </style>
 </head>
 <body>
 <main class="app">
 <header class="top">
-  <img class="logo" src="data:image/jpeg;base64,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[... ELLIPSIZATION ...]0K40HSXdKIkNbIJBjtw4EfU5d3pouRZS2+2MO+d5mkbjiBuA9ZV3fpu2G8x3hlM2OuYTmWPcX5GCHdqrmotFVt41lR3eSqiNDEYw6AghzQwl27kcnCK9sdoxzWPdWaKs1xpCjZF7nMqaCNuRss2g1vE7wQc+gr59H5fqTpBnvFSwNMbHS7Oc7BOGgDwWxdb1r7bpavmhY50hjLGhjcnLtyq3RFSx27TFXdKk7DJnlxJ5MYMZzz5ohOOa3rXfZ9Olu9PZR09hosuqa9wD2jjsZwG/5isBoej97XSQ+1F7XF9OWOds42twcAsZSyX7U+o6rUVnpmSyU8oLGyOGGt37IAPE43+lcvLbpBr62199pvJat8rGlrW4Dx8XPFY21zfd+tcemaoqKa0Wx1NPJC41mC6NxaSOrduXLos1G6ttMtur5SamiBO3Icuczv8ADgur04n+Y7d+9k//AK3Kv62s9XbH2+6Wx0g906VlLKGDi8tAA/zfaiV73jLMw6GoNUVt41T19LVTRUbZ2xQsY8gFocBnd2nJWd6U+updR2arEkrWbLQcOONzxndnsKxmqbI2wDTFB5pm2g+d45uLm59A4BWHpppwbZbKoZOxIWYHPLc/cswju+rTtcb5crVJZauKqrqdjKiBzcOkG/IPJUbocmebbeqQYLsCTceJLcfcF9tO9GVjuFspbhLUVEhqIhJ5paAcjwyul0YNNu1rdbeMhoY9jQeey7d9RWJT6rzes2T0LPEVyulPNjygsaTnjuJBWV6Zreyaz0laMdbDLsZxv2XD2hY7UmnrzpvU51BpyB08L3Fz4o25LSfjAjiQV1q734a76ijqKEUFI1+XyOaWtz2795xv3YWWO8UnHPldLJPRVugaOtvcMU0EdLtyCVocMNHf4KrVmvdNxWV9PbrMRJOwsbC+JrWgkcCefoWyLbaqa32iC2MaHwRRiPDhucO8L4Uem7LR1BnpLZSxS/PbEMosTjtqNKt0R2ast1onqa1jovK3NdHG4YcGgbifFWe36YtVuulTcqWka2rqHFz5eYzxA7MlZlrQApCNmPHFYiPhACnClEbEKURAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREEYUbK5Ig4locMHgupWWyjrKCShqIWmmkGy6MbgR6F3URjUSxlmslvsdKaW2QCGEvLyAc5JWB1jow6jraKsirfJJ6bh8HtBxyCOY7FcVxx60Y6I8Kd0gaVrNUWqjpaWogifDJtudLnB80t3Y8VY6ahZ5DTU9SxkhhazG7I2mjcQu8ApwEYjHETtSdcaRrtQXS2VVHPTxR0jgXiUnLvOB3YHcsnrLTfvmtDaHyjyZzZGuEmxtYxx3eGVYsDOeaYA4IxOOs7YvTtrNms1JbjP15p4xGJNnGQO5dai0naqO9y3mKOTy2Vxc55ecbxg7lnuSIzFIcdkE71OwFIUom47ACkBSiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIg//2Q==" alt="ตราโรงพยาบาลเนินขาม">
+  <img class="logo" src="logo-noenkhamhospital.jpg" alt="ตราโรงพยาบาลเนินขาม">
   <div>
     <div class="hospital">โรงพยาบาลเนินขาม</div>
     <div class="sub">วิธีใช้ยาพ่นชนิดผงแห้ง Accuhaler</div>
@@ -62,6 +41,7 @@ body{margin:0;font-family:system-ui,-apple-system,"Noto Sans Thai",Tahoma,sans-s
   </div>
   <div class="tip" id="tip"></div>
 </section>
+<div class="note" id="note">หมายเหตุ: หลังใช้ยาพ่นที่มีสเตียรอยด์ ควรบ้วนปากด้วยน้ำแล้วบ้วนทิ้ง</div>
 <footer class="bottom">
   <div class="nav">
     <button id="back" class="btn secondary">← ย้อนกลับ</button>
@@ -76,81 +56,96 @@ body{margin:0;font-family:system-ui,-apple-system,"Noto Sans Thai",Tahoma,sans-s
 </main>
 <script>
 const steps=[
- {title:'ตรวจยาก่อนใช้',say:'ดูตัวนับยา ว่ายังมียาเหลือ และปากพ่นสะอาด',tip:'หากยาหมดหรืออุปกรณ์เสีย ให้ปรึกษาเภสัชกร',scene:0},
- {title:'เปิดฝาครอบ',say:'ใช้นิ้วโป้งเลื่อนฝาครอบ จนสุดและได้ยินเสียงคลิก',tip:'ถืออุปกรณ์ให้มั่นคง',scene:1},
- {title:'เลื่อนคันโยก',say:'ถืออุปกรณ์ในแนวราบ แล้วเลื่อนคันโยกจนสุด',tip:'เลื่อนเพียงครั้งเดียวต่อการสูดหนึ่งครั้ง',scene:2},
- {title:'หายใจออก',say:'หายใจออกให้สุดเท่าที่สบาย โดยหันหน้าออกจากปากพ่น',tip:'อย่าหายใจออกเข้าไปในอุปกรณ์',scene:3},
- {title:'อมปากพ่น',say:'นำปากพ่นเข้าปาก แล้วเม้มริมฝีปากให้สนิท',tip:'นั่งหรือยืนตัวตรง เงยคางเล็กน้อย',scene:4},
- {title:'สูดยา',say:'สูดลมหายใจเข้าทางปาก ให้เร็ว แรง และลึก',tip:'อย่าสูดยาทางจมูก',scene:5},
- {title:'กลั้นหายใจ',say:'นำอุปกรณ์ออก แล้วกลั้นหายใจประมาณ 10 วินาที หรือเท่าที่ไหว',tip:'จากนั้นค่อย ๆ หายใจออกห่างจากอุปกรณ์',scene:6},
- {title:'ปิดฝาครอบ',say:'ใช้นิ้วโป้งเลื่อนฝาครอบกลับจนสุด',tip:'หากแพทย์สั่งมากกว่า 1 สูด ให้ทำตามวิธีเดิมอีกครั้ง',scene:7},
- {title:'บ้วนปากหลังใช้',say:'ถ้าเป็นยาพ่นที่มีสเตียรอยด์ ให้บ้วนปากด้วยน้ำแล้วบ้วนทิ้ง',tip:'หากไม่แน่ใจ ให้สอบถามเภสัชกร',scene:8}
+ {title:'เปิดฝาครอบ',say:'เปิดฝาครอบก่อนใช้ โดยจับตัวเครื่องด้วยมือซ้าย และใช้นิ้วหัวแม่มือขวาดันฝาครอบออกจนสุด',tip:'วางนิ้วให้มั่นคง แล้วเปิดจนสุด',scene:1},
+ {title:'เลื่อนคันโยก',say:'ถืออุปกรณ์ในแนวราบ แล้วเลื่อนคันโยกไปจนสุดหนึ่งครั้ง เพื่อเตรียมยา',tip:'อย่าเขย่า และอย่าเลื่อนคันโยกซ้ำโดยไม่จำเป็น',scene:2},
+ {title:'หายใจออก',say:'หายใจออกเบา ๆ ทางปาก โดยหันหน้าออกจากปากพ่น',tip:'อย่าหายใจออกเข้าตัวอุปกรณ์',scene:3},
+ {title:'อมปากพ่นและสูดยา',say:'อมปากพ่นให้สนิท แล้วสูดลมหายใจเข้าทางปากให้ลึกและสม่ำเสมอ',tip:'สูดเข้าทางปาก ไม่ใช่ทางจมูก',scene:4},
+ {title:'กลั้นหายใจ',say:'นำอุปกรณ์ออกจากปาก แล้วกลั้นหายใจประมาณ 10 วินาที หรือเท่าที่ทำได้',tip:'ช่วยให้ยาลงปอดได้ดีขึ้น',scene:5},
+ {title:'หายใจออกช้า ๆ',say:'ค่อย ๆ หายใจออกตามปกติ หลังจากกลั้นหายใจเสร็จ',tip:'หายใจออกช้า ๆ และผ่อนคลาย',scene:6},
+ {title:'ปิดฝาครอบ',say:'ใช้นิ้วหัวแม่มือเลื่อนฝาครอบกลับเข้าที่ให้เรียบร้อย',tip:'ปิดฝาให้สนิททุกครั้งหลังใช้',scene:7}
 ];
-const green='#087047', gold='#e5ba3e', deep='#074c33';
-function inhaler(open=false,lever=false){
-  return `
-  <g class="motion" transform="translate(0,0)">
-    <circle cx="190" cy="178" r="104" fill="#8b52db" stroke="#6c34ba" stroke-width="4"/>
-    <path d="M118 86 C86 108 73 140 73 178 C73 220 89 252 121 272" fill="none" stroke="#6e2ab4" stroke-width="9" stroke-linecap="round" opacity=".98"/>
-    <path d="M124 92 C94 111 83 141 83 178 C83 214 96 245 124 264" fill="none" stroke="#6e2ab4" stroke-width="7" stroke-linecap="round" opacity=".98"/>
-    <path d="M130 99 C104 117 94 143 94 178 C94 209 104 236 129 255" fill="none" stroke="#6e2ab4" stroke-width="5" stroke-linecap="round" opacity=".98"/>
-    <ellipse cx="187" cy="137" rx="57" ry="44" fill="#ffffff" stroke="#ddd5e9" stroke-width="3"/>
-    <path d="M227 100 A42 40 0 0 1 243 170 L221 170 A25 26 0 0 0 212 112 Z" fill="#f2b247"/>
-    <circle cx="173" cy="118" r="2.1" fill="#8a8a8a"/><circle cx="173" cy="126" r="2.1" fill="#8a8a8a"/><circle cx="173" cy="134" r="2.1" fill="#8a8a8a"/>
-    <path d="M183 113 h37" stroke="#7d8990" stroke-width="2.8" stroke-linecap="round"/>
-    <path d="M183 124 h42" stroke="#7d8990" stroke-width="2.8" stroke-linecap="round"/>
-    <path d="M183 135 h34" stroke="#7d8990" stroke-width="2.8" stroke-linecap="round"/>
-    <path d="M183 146 h28" stroke="#7d8990" stroke-width="2.8" stroke-linecap="round"/>
-    <rect x="218" y="203" width="27" height="23" rx="10" fill="#ffffff" stroke="#cfc3e2" stroke-width="2.6"/>
-    <text x="231.5" y="219" font-size="12" text-anchor="middle" font-weight="800" fill="#5f6480">24</text>
-    <path d="M224 218 C248 205 259 206 271 222 C256 247 238 254 223 251 C214 243 213 226 224 218 Z" fill="${open?'#9b63e6':'#8b52db'}" stroke="#6c34ba" stroke-width="4"/>
-    ${open?'<path d="M248 216 C270 205 287 207 297 220" fill="none" stroke="#c89df3" stroke-width="4" stroke-linecap="round"/>':''}
-    ${lever?'<path d="M183 240 l24 12 31 -16" stroke="#e1bc4b" fill="none" stroke-width="13" stroke-linecap="round"/>':''}
-  </g>`;
-}
-function maleFace(){
-  return `
-  <g>
-    <path d="M89 94 Q112 53 163 58 Q198 62 218 91 L215 112 Q195 88 158 88 Q119 89 95 114 Z" fill="#2c4038"/>
-    <path d="M111 66 Q70 74 80 147 Q79 179 107 195 L115 234 Q161 250 188 214 L188 175 Q214 156 196 123 Q182 70 111 66Z" fill="#f3c5a2" stroke="#c98c70" stroke-width="3"/>
-    <circle cx="137" cy="132" r="4" fill="#4f3b32"/><path d="M159 128 Q169 123 178 129" fill="none" stroke="#5a4036" stroke-width="4"/>
-    <path d="M189 135 Q219 145 188 155" stroke="#c98c70" stroke-width="3" fill="none"/>
-    <path d="M166 168 Q177 178 188 167" stroke="#8d4f46" stroke-width="5" fill="none" stroke-linecap="round"/>
-    <path d="M102 230 L98 282 L220 282 L188 210" fill="#7fb7a3"/>
-    <rect x="95" y="228" width="130" height="58" rx="22" fill="#79b4d0"/>
-  </g>`;
-}
-function breath(dir){
-  return `<g class="breath" stroke="${dir==='out'?'#e6a63f':'#20a37a'}" stroke-width="6" fill="none" stroke-linecap="round"><path d="M220 125 Q260 110 294 126"/><path d="M220 150 Q265 150 302 153"/><path d="M220 176 Q260 192 294 180"/></g>`;
-}
-function startScene(){
-  return `<svg viewBox="0 0 380 320" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><ellipse cx="190" cy="292" rx="127" ry="10" fill="#dcebe3"/>${maleFace()}<g transform="translate(180 98) scale(.55)">${inhaler(true,false)}</g><circle cx="296" cy="84" r="32" fill="#eaf6ef" stroke="${green}" stroke-width="3"/><path d="M281 84 l10 10 18-22" stroke="${green}" stroke-width="8" fill="none" stroke-linecap="round"/></svg>`;
-}
-function scene(i){
-  let content='';
-  if(i===0) content=inhaler(false,false)+'<circle cx="293" cy="93" r="29" fill="#e6f5eb"/><path d="M280 93 l9 9 17-20" stroke="'+green+'" stroke-width="7" fill="none"/>';
-  if(i===1) content=inhaler(true,false)+'<path class="slide" d="M255 269 h-66" stroke="'+green+'" stroke-width="10" stroke-linecap="round"/><path d="M189 258 l-18 11 18 11" fill="'+green+'"/>';
-  if(i===2) content=inhaler(true,true)+'<path class="slide" d="M200 279 h65" stroke="'+green+'" stroke-width="8" stroke-linecap="round"/><path d="M260 267 l19 12 -19 12" fill="'+green+'"/>';
-  if(i===3) content=maleFace()+breath('out')+'<circle cx="320" cy="210" r="35" fill="#fff0df"/><path d="M305 210 h30 m-15 -15 v30" stroke="#bd8b35" stroke-width="5"/>';
-  if(i===4 || i===5) content=maleFace()+`<g transform="translate(155 112) scale(.50)">${inhaler(true,true)}</g>`+(i===5?`<path class="breath" d="M285 163 Q230 145 205 171" fill="none" stroke="${green}" stroke-width="10" stroke-linecap="round"/>`:``);
-  if(i===6) content=maleFace()+`<circle cx="285" cy="122" r="49" fill="#e9f6ee" stroke="${green}" stroke-width="4"/><text x="285" y="134" font-size="34" font-weight="800" text-anchor="middle" fill="${green}">10</text><text x="285" y="166" font-size="13" text-anchor="middle" fill="${deep}">วินาที</text>`;
-  if(i===7) content=inhaler(false,false)+'<path class="slide" d="M266 267 h-75" stroke="'+green+'" stroke-width="10" stroke-linecap="round"/><path d="M191 257 l-17 10 17 10" fill="'+green+'"/>';
-  if(i===8) content=`<g class="motion"><path d="M160 81 l55 0 15 136 Q215 246 160 246 Q105 246 90 217 l15-136Z" fill="#eef9ff" stroke="#5a9ab3" stroke-width="5"/><path d="M101 170 Q160 153 218 170 L223 215 Q207 240 160 240 Q116 240 97 214Z" fill="#79c9ed" opacity=".75"/><path d="M127 73 h68" stroke="#5a9ab3" stroke-width="8" stroke-linecap="round"/><path d="M279 122 Q310 165 280 189 Q248 169 279 122Z" fill="#59a9cc"/><path d="M263 210 l12 12 30-35" stroke="${green}" stroke-width="9" fill="none" stroke-linecap="round"/></g>`;
-  return `<svg viewBox="0 0 380 320" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><ellipse cx="190" cy="292" rx="127" ry="10" fill="#dcebe3"/>${content}</svg>`;
-}
-let started=false;
-let position=0;
+const purple='#8b52db', purpleDark='#6a2db8', purpleLight='#b38bf0', skin='#e6bea0', shirt='#8db6c7', hair='#28423a', gold='#e0ab3d', green='#086642', deep='#074c33';
 const el=id=>document.getElementById(id);
+let started=false, position=0;
 function speakCurrent(){
   if(!('speechSynthesis' in window)) return;
   try{
-    window.speechSynthesis.cancel();
+    speechSynthesis.cancel();
     const s=steps[position];
     const u=new SpeechSynthesisUtterance(s.title+' '+s.say);
-    u.lang='th-TH';
-    u.rate=.88;
-    window.speechSynthesis.speak(u);
+    const voices=speechSynthesis.getVoices ? speechSynthesis.getVoices() : [];
+    const thai=voices.find(v=>/^th/i.test(v.lang)) || voices.find(v=>v.lang && v.lang.toLowerCase().includes('th'));
+    if(thai) u.voice=thai;
+    u.lang=thai?.lang || 'th-TH';
+    u.rate=.92; u.pitch=1;
+    speechSynthesis.speak(u);
   }catch(e){}
+}
+function inhaler(open=false,lever=false){
+  return `
+  <g class="motion">
+    <defs>
+      <radialGradient id="bodyGrad" cx="38%" cy="30%" r="75%"><stop offset="0%" stop-color="#ae87ef"/><stop offset="55%" stop-color="${purple}"/><stop offset="100%" stop-color="${purpleDark}"/></radialGradient>
+      <linearGradient id="capGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#c9acf7"/><stop offset="100%" stop-color="${purple}"/></linearGradient>
+    </defs>
+    <circle cx="192" cy="178" r="105" fill="url(#bodyGrad)" stroke="#6c34ba" stroke-width="4"/>
+    <path d="M119 84 C86 107 71 142 72 182 C72 221 87 254 121 274" fill="none" stroke="#6d2eb5" stroke-width="10" stroke-linecap="round"/>
+    <path d="M126 92 C97 112 84 144 84 181 C84 215 96 244 124 264" fill="none" stroke="#6d2eb5" stroke-width="7.2" stroke-linecap="round"/>
+    <path d="M134 100 C109 118 98 145 98 181 C98 209 107 234 130 253" fill="none" stroke="#6d2eb5" stroke-width="4.7" stroke-linecap="round"/>
+    <ellipse cx="188" cy="135" rx="59" ry="45" fill="#fbfbfd" stroke="#ddd7e9" stroke-width="3.2"/>
+    <path d="M228 97 A44 40 0 0 1 245 171 L221 171 A24 25 0 0 0 211 111 Z" fill="#f0b14b"/>
+    <circle cx="170" cy="116" r="2" fill="#8b8d91"/><circle cx="170" cy="124" r="2" fill="#8b8d91"/><circle cx="170" cy="132" r="2" fill="#8b8d91"/><circle cx="170" cy="140" r="2" fill="#8b8d91"/>
+    <path d="M181 113 h37" stroke="#79838b" stroke-width="2.5" stroke-linecap="round"/><path d="M181 123 h43" stroke="#79838b" stroke-width="2.5" stroke-linecap="round"/><path d="M181 133 h34" stroke="#79838b" stroke-width="2.5" stroke-linecap="round"/><path d="M181 143 h27" stroke="#79838b" stroke-width="2.5" stroke-linecap="round"/>
+    <rect x="220" y="202" width="27" height="23" rx="10" fill="#ffffff" stroke="#cfc3e2" stroke-width="2.5"/>
+    <text x="233.5" y="218" font-size="12" text-anchor="middle" font-weight="800" fill="#4b4f69">24</text>
+    <path d="M225 216 C249 204 261 205 273 221 C258 247 237 255 222 252 C214 244 214 225 225 216 Z" fill="${open?'url(#capGrad)':'url(#bodyGrad)'}" stroke="#6c34ba" stroke-width="4"/>
+    ${open?'<path d="M247 215 C267 204 287 205 300 219" fill="none" stroke="#caaff4" stroke-width="4" stroke-linecap="round"/>':''}
+    ${lever?'<path d="M183 240 l24 13 31 -16" stroke="#dfbc4e" fill="none" stroke-width="13" stroke-linecap="round"/>':''}
+  </g>`;
+}
+function faceBase(dir='right', mouth='smile'){
+  const flip=dir==='left'?'translate(330,0) scale(-1,1)':'translate(0,0)';
+  const mouthPath = mouth==='open' ? '<path d="M196 170 q12 10 24 0 q-1 14 -12 16 q-11 -2 -12 -16z" fill="#b86a61"/>' : mouth==='inhale' ? '<ellipse cx="208" cy="173" rx="7" ry="9" fill="#b86a61"/>' : '<path d="M193 172 q14 10 24 0" fill="none" stroke="#9c5d54" stroke-width="4" stroke-linecap="round"/>';
+  return `<g transform="${flip}">
+      <path d="M92 102 q18-42 66-49 q54-7 84 21 q11 10 18 24 l-6 18 q-12-17-25-26 q-23-17-69-16 q-43 1-69 28z" fill="${hair}"/>
+      <path d="M114 63 q49-19 101 12" fill="none" stroke="#3b584f" stroke-width="8" stroke-linecap="round" opacity=".7"/>
+      <path d="M111 74 Q76 84 79 151 Q81 182 106 202 L113 236 Q154 252 191 231 L201 196 Q223 184 230 157 Q239 117 211 87 Q170 49 111 74Z" fill="${skin}" stroke="#c38c6d" stroke-width="3.2"/>
+      <ellipse cx="149" cy="142" rx="4" ry="4.6" fill="#43322c"/>
+      <path d="M178 140 q10-7 22 0" fill="none" stroke="#4e3b34" stroke-width="4" stroke-linecap="round"/>
+      <path d="M204 150 q24 10 1 26" stroke="#c48f71" stroke-width="3" fill="none"/>
+      ${mouthPath}
+      <path d="M194 108 q13 4 24 16" fill="none" stroke="#355047" stroke-width="7" stroke-linecap="round"/>
+      <path d="M102 237 L96 282 L228 282 L203 199 Q166 215 113 236" fill="${shirt}"/>
+      <path d="M95 282 q65 13 134 0" fill="none" stroke="#6ca0b6" stroke-width="12" stroke-linecap="round" opacity=".45"/>
+    </g>`;
+}
+function hand(x,y,rot=0,side='right'){
+  const sx = side==='left' ? -1 : 1;
+  return `<g transform="translate(${x} ${y}) rotate(${rot}) scale(${sx} 1)"><path d="M0 0 c12-10 34-8 43 3 c8 9 10 28 2 39 c-8 11-25 12-36 10 c-8-1-14-6-17-12 c-5-10-4-31 8-40z" fill="${skin}" stroke="#c38c6d" stroke-width="2.5"/><path d="M28 5 c3-14 18-17 24-10 c4 5 2 13-3 16" fill="none" stroke="#c38c6d" stroke-width="2.5" stroke-linecap="round"/></g>`;
+}
+function arrow(x1,y1,x2,y2,label=''){
+  return `<g class="slide"><path d="M${x1} ${y1} L${x2} ${y2}" stroke="#f0b332" stroke-width="8" stroke-linecap="round"/><path d="M${x2-8} ${y2-8} l15 8 -15 8" fill="#f0b332" transform="rotate(${Math.atan2(y2-y1,x2-x1)*180/Math.PI} ${x2} ${y2})"/></g>${label?`<g class="pulse"><ellipse cx="${x2+18}" cy="${y2-16}" rx="22" ry="14" fill="#fff5b7" stroke="#d5b443"/><text x="${x2+18}" y="${y2-11}" font-size="12" text-anchor="middle" font-weight="700" fill="#8c6b11">${label}</text></g>`:''}`;
+}
+function breath(dir='out'){
+  const color=dir==='out'?'#e0a43d':'#20a37a';
+  return `<g class="breath" stroke="${color}" stroke-width="6" fill="none" stroke-linecap="round"><path d="M235 144 Q274 131 307 144"/><path d="M236 164 Q278 164 310 166"/><path d="M236 184 Q272 197 304 188"/></g>`;
+}
+function startScene(){
+  return `<svg viewBox="0 0 380 320" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><ellipse cx="190" cy="294" rx="127" ry="10" fill="#dcebe3"/>${faceBase('right','smile')}<g transform="translate(182 98) scale(.56)">${inhaler(true,false)}</g><circle cx="302" cy="84" r="32" fill="#eaf6ef" stroke="${green}" stroke-width="3"/><path d="M287 84 l10 10 18-22" stroke="${green}" stroke-width="8" fill="none" stroke-linecap="round"/></svg>`;
+}
+function scene(i){
+  let c='';
+  if(i===1){c=`<g transform="translate(-5 5)">${inhaler(true,false)}</g>${hand(123,112,-22,'left')}${hand(235,206,18,'right')}${arrow(266,212,304,212,'ดัน')}`;}
+  if(i===2){c=`<g transform="translate(-10 0)">${inhaler(true,true)}</g>${hand(118,146,-15,'left')}${hand(290,175,12,'right')}${arrow(194,245,265,245,'คลิก')}`;}
+  if(i===3){c=`${faceBase('right','open')}${breath('out')}<g transform="translate(280 110) scale(.28)">${inhaler(true,true)}</g>`;}
+  if(i===4){c=`${faceBase('right','inhale')}<g transform="translate(153 110) scale(.52)">${inhaler(true,true)}</g><path d="M281 171 Q242 154 214 173" fill="none" stroke="${green}" stroke-width="9" stroke-linecap="round" class="breath"/>`;}
+  if(i===5){c=`${faceBase('right','smile')}<g transform="translate(145 112) scale(.50)">${inhaler(true,true)}</g><circle cx="292" cy="121" r="50" fill="#eaf6ef" stroke="${green}" stroke-width="4" class="pulse"/><text x="292" y="133" font-size="34" font-weight="800" text-anchor="middle" fill="${green}">10</text><text x="292" y="165" font-size="13" text-anchor="middle" fill="${deep}">วินาที</text>`;}
+  if(i===6){c=`${faceBase('right','open')}${breath('out')}`;}
+  if(i===7){c=`<g transform="translate(-5 5)">${inhaler(false,false)}</g>${hand(124,114,-22,'left')}${hand(233,208,18,'right')}${arrow(299,211,255,211,'ปิด')}`;}
+  return `<svg viewBox="0 0 380 320" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><ellipse cx="190" cy="294" rx="127" ry="10" fill="#dcebe3"/>${c}</svg>`;
+}
+function updateNote(){
+  el('note').textContent = started && position===steps.length-1 ? 'หมายเหตุ: หลังใช้ยาพ่นที่มีสเตียรอยด์ ควรบ้วนปากด้วยน้ำแล้วบ้วนทิ้ง' : 'หมายเหตุ: ทำตามทีละขั้นตอน เมื่อทำเสร็จแล้วจึงกดปุ่ม “ทำแล้ว ถัดไป”';
 }
 function render(){
   if(!started){
@@ -159,12 +154,12 @@ function render(){
     el('fill').style.width='0%';
     el('heading').textContent='พร้อมเริ่มฝึก';
     el('instruction').textContent='กด “เริ่ม” แล้วทำตามทีละขั้นตอน';
-    el('tip').textContent='หากต้องการฟังซ้ำ กด “ฟังคำแนะนำ”';
+    el('tip').textContent='มีภาพสาธิตและเสียงอ่านให้ทุกขั้นตอน';
     el('art').innerHTML=startScene();
-    el('art').setAttribute('aria-label','ภาพเริ่มต้นการฝึก');
     el('back').disabled=true;
     el('next').textContent='เริ่ม';
     el('announce').textContent='พร้อมเริ่มฝึก';
+    updateNote();
     return;
   }
   const s=steps[position];
@@ -175,44 +170,20 @@ function render(){
   el('instruction').textContent=s.say;
   el('tip').textContent=s.tip;
   el('art').innerHTML=scene(s.scene);
-  el('art').setAttribute('aria-label','ภาพสาธิต: '+s.title);
   el('back').disabled=position===0;
   el('next').textContent=position===steps.length-1?'✓ เริ่มใหม่':'ทำแล้ว ถัดไป →';
   el('announce').textContent=s.title+' '+s.say;
+  updateNote();
 }
-el('back').onclick=()=>{
-  if(!started) return;
-  if(position>0){position--;render();}
-};
+el('back').onclick=()=>{ if(!started) return; if(position>0){position--; render(); speakCurrent();} };
 el('next').onclick=()=>{
-  if(!started){
-    started=true;
-    position=0;
-    render();
-    speakCurrent();
-    return;
-  }
-  if(position===steps.length-1){
-    started=false;
-    position=0;
-    if('speechSynthesis' in window) window.speechSynthesis.cancel();
-    render();
-    return;
-  }
-  position++;
-  render();
-  speakCurrent();
+  if(!started){started=true; position=0; render(); speakCurrent(); return;}
+  if(position===steps.length-1){started=false; position=0; if('speechSynthesis' in window) speechSynthesis.cancel(); render(); return;}
+  position++; render(); speakCurrent();
 };
-el('again').onclick=()=>{
-  const a=el('art');
-  a.innerHTML='';
-  requestAnimationFrame(()=>a.innerHTML=started?scene(steps[position].scene):startScene());
-};
-el('speak').onclick=()=>{
-  if(!started) return;
-  if(!('speechSynthesis' in window)){alert('อุปกรณ์นี้ไม่รองรับเสียงอ่าน กรุณาอ่านข้อความบนหน้าจอ');return}
-  speakCurrent();
-};
+el('again').onclick=()=>{ const a=el('art'); a.innerHTML=''; requestAnimationFrame(()=>a.innerHTML=started?scene(steps[position].scene):startScene()); };
+el('speak').onclick=()=>{ if(!started) return; if(!('speechSynthesis' in window)){alert('อุปกรณ์นี้ไม่รองรับเสียงอ่าน กรุณาอ่านข้อความบนหน้าจอ'); return;} speakCurrent(); };
+if('speechSynthesis' in window && speechSynthesis.onvoiceschanged !== undefined){ speechSynthesis.onvoiceschanged = ()=>{}; }
 render();
 </script>
 </body>
